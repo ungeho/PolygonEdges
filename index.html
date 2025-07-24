@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>散開距離計算</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>散開距離計算</h1>
+        <p class="description">
+            1. 散開する人数に応じて、同じ円周上かつ等角度に散開する事を前提とした最小散開の条件を満たす円周の半径を計算する。<br>
+            2. 散開するプレイヤー同士の距離に少しだけ余裕が欲しい場合に、散開する円周の半径を設定する事でプレイヤー同士の距離を計算する。
+        </p>
+
+        <section>
+            <h2>1. AoEの半径から最小散開が成立する円周を計算</h2>
+            <label for="aoe">AoEの半径:</label>
+            <input type="number" id="aoe" step="0.00001" min="0.00001" />
+
+            <label for="n">人数:</label>
+            <input type="number" id="n" step="1" min="2" />
+
+            <div class="result" id="result"></div>
+        </section>
+
+        <hr />
+
+        <section>
+            <h2>2. 円周からプレイヤー同士の距離を計算（多角形の辺の長さ）</h2>
+            <label for="r-input">散開する円周の半径:</label>
+            <input type="number" id="r-input" step="0.00001" min="0.00001" />
+
+            <div class="result" id="edge-result"></div>
+        </section>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

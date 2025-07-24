@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
+
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+    padding: 2em;
+    background-color: #f4f6f8;
+    color: #333;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    background: #fff;
+    padding: 2em 2.5em;
+    border-radius: 12px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+h1 {
+    text-align: center;
+    font-size: 1.6em;
+    margin-bottom: 1em;
+}
+
+h2 {
+    margin-top: 2em;
+    font-size: 1.2em;
+    border-left: 4px solid #0077cc;
+    padding-left: 0.5em;
+}
+
+section {
+    margin-bottom: 2em;
+}
+
+label {
+    display: block;
+    margin-top: 1.2em;
+    font-weight: bold;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 0.6em;
+    margin-top: 0.4em;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    transition: border-color 0.3s;
+}
+
+input[type="number"]:focus {
+    border-color: #0077cc;
+    outline: none;
+}
+
+.result {
+    margin-top: 1.4em;
+    padding: 1em;
+    font-size: 1.05em;
+    background: #f9fcff;
+    border-left: 4px solid #0077cc;
+    border-radius: 6px;
+    line-height: 1.6;
+    white-space: pre-line;
+}
+
+hr {
+    margin: 3em 0 2em;
+    border: none;
+    border-top: 1px solid #ddd;
+}
+
+p.description {
+    font-size: 0.95em;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 2em;
+}
+
+.result:empty {
+    display: none;
+}
